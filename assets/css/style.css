@@ -110,7 +110,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- hero (home) ---------- */
 .hero {
-  padding: 88px 0 56px;
+  padding: 56px 0 40px;
   border-bottom: 1px solid var(--rule);
   position: relative;
   overflow: hidden;
@@ -123,14 +123,7 @@ p { margin: 0 0 1em; }
   background: radial-gradient(circle, rgba(200,16,46,0.10), rgba(200,16,46,0) 70%);
   pointer-events: none;
 }
-.hero h1 { max-width: 16ch; }
-.hero .lede { margin-top: 12px; }
-.hero-stats {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 24px; margin-top: 48px; max-width: 740px;
-}
-.stat .num { font-family: var(--serif); font-size: 2.4rem; color: var(--ink); line-height: 1; }
-.stat .lbl { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-3); margin-top: 6px; }
+.hero h1 { margin: 0; }
 
 /* ---------- city cards ---------- */
 .city-grid {

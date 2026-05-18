@@ -1,6 +1,6 @@
-# Japan, a friend's guide
+# Japan Travel Guide
 
-A small static site with recommendations from 16 days in Japan
+A static site with recommendations from 16 days in Japan
 (Nov–Dec 2018) — Tokyo, Hakone, Kyoto, Nara, Osaka, Koyasan.
 
 Live: <https://lucymeadow.github.io/japan/>
