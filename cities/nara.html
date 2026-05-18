@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23c8102e'/%3E%3C/svg%3E">
 </head>
@@ -39,6 +42,14 @@
         </div>
         <div class="city-jp-big">奈良</div>
       </header>
+
+      <div class="city-map-wrap">
+        <div id="city-map" data-city="nara" aria-label="Map of places in Nara"></div>
+        <p class="city-map-caption">
+          <span>Click any pin for the note and links.</span>
+          <span><a href="../map.html">see the full trip map &rarr;</a></span>
+        </p>
+      </div>
 
       <section class="section">
         <p class="lede">
@@ -100,5 +111,9 @@
       <div><a href="../">← back to overview</a></div>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script src="../assets/js/city-map.js"></script>
 </body>
 </html>

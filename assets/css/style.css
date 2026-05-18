@@ -303,6 +303,32 @@ p { margin: 0 0 1em; }
   border-radius: 6px;
   background: #eee;
 }
+
+/* ---------- per-city map (on city pages) ---------- */
+.city-map-wrap {
+  margin: 24px 0 8px;
+  position: relative;
+  z-index: 1;
+}
+#city-map {
+  height: 380px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #eee;
+}
+.city-map-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--ink-3);
+}
+@media (max-width: 600px) {
+  #city-map { height: 300px; }
+}
 .legend {
   display: flex; flex-wrap: wrap; gap: 14px; margin: 20px 0;
   font-size: 0.9rem;
