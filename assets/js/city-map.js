@@ -52,10 +52,17 @@
     zoomControl: true
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  // Two-layer composition for English labels (see map.js for explanation).
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 19
+  }).addTo(map);
+
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Labels &copy; <a href="https://www.esri.com/">Esri</a>',
+    maxZoom: 16,
+    pane: 'overlayPane'
   }).addTo(map);
 
   const icon = makeIcon(city.color);

@@ -11,10 +11,19 @@
     scrollWheelZoom: true
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap contributors · &copy; CARTO',
+  // Two-layer composition for English labels:
+  //   1. Warm cream base from Carto Voyager (no labels variant)
+  //   2. Bilingual Romaji labels overlay from Esri Light Gray Reference
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 19,
     subdomains: 'abcd'
+  }).addTo(map);
+
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Labels &copy; <a href="https://www.esri.com/">Esri</a>',
+    maxZoom: 16,
+    pane: 'overlayPane'
   }).addTo(map);
 
   const catLabel = {
