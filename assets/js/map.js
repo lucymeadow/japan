@@ -49,16 +49,30 @@
 
   const bounds = [];
 
+  // Build a Google Maps search URL from a place name + city (fallback when no `url` set).
+  function gmapsSearch(place, city) {
+    const q = encodeURIComponent(`${place.name} ${city.name}`);
+    return `https://www.google.com/maps/search/?api=1&query=${q}`;
+  }
+
   data.places.forEach(place => {
     const city = data.cities[place.city];
     if (!city) return;
     const icon = makeIcon(city.color);
     const marker = L.marker([place.lat, place.lon], { icon });
     const cat = catLabel[place.category] || place.category;
+    const officialUrl = place.url;
+    const mapsUrl = gmapsSearch(place, city);
+    const linkLine = officialUrl
+      ? `<a href="${officialUrl}" target="_blank" rel="noopener">official site</a>
+         &middot;
+         <a href="${mapsUrl}" target="_blank" rel="noopener">Google Maps</a>`
+      : `<a href="${mapsUrl}" target="_blank" rel="noopener">open in Google Maps</a>`;
     marker.bindPopup(
       `<span class="cat-tag" style="color:${city.color};">${city.name} · ${cat}</span>
        <b>${place.name}</b>
-       ${place.note || ''}`
+       ${place.note || ''}
+       <div class="popup-links">${linkLine}</div>`
     );
     marker.addTo(cityLayers[place.city]);
     bounds.push([place.lat, place.lon]);
