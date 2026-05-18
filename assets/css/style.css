@@ -204,7 +204,7 @@ p { margin: 0 0 1em; }
   padding: 22px 0;
   border-bottom: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 96px 1fr;
+  grid-template-columns: 124px 1fr;
   gap: 24px;
 }
 .place:last-child { border-bottom: 0; }
@@ -222,6 +222,7 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--rule);
   background: #fff;
   color: var(--ink-2);
+  white-space: nowrap;
 }
 .place .body h3 { margin: 0 0 6px; font-family: var(--serif); font-size: 1.3rem; }
 .place .body p  { margin: 0; color: var(--ink-2); }
