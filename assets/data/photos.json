@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "credit": "Photos by Lucy Meadow Photography",
+    "site": "https://lucyjacobsonmeadowphotography.com/#japan",
+    "host": "https://lucyjacobsonmeadowphotography.com/images/japan/"
+  },
+  "tokyo": [
+    { "file": "DSC_0501.jpg", "alt": "Tokyo skyline at twilight through a hotel window" },
+    { "file": "DSC_0593.jpg", "alt": "Tokyo skyline at night with skyscrapers" },
+    { "file": "DSC_0615.jpg", "alt": "Wide Tokyo cityscape at night from above" },
+    { "file": "DSC_0631.jpg", "alt": "Tokyo Tower lit orange against a dark city" }
+  ],
+  "kyoto": [
+    { "file": "DSC_0712.jpg", "alt": "Lantern-lit Pontocho alley at dusk, Kyoto" },
+    { "file": "DSC_0742.jpg", "alt": "Kyoto temple strolling garden in autumn" },
+    { "file": "DSC_0781_1.jpg", "alt": "Bright red Japanese maple leaves in Kyoto" },
+    { "file": "DSC_0786.jpg", "alt": "Temple pond reflecting autumn leaves, Kyoto" },
+    { "file": "DSC_0787.jpg", "alt": "Rock-and-moss garden with maples, Kyoto" },
+    { "file": "DSC_0850_1.jpg", "alt": "Stone lantern in a maple-lit Kyoto forest" },
+    { "file": "DSC_0852.jpg", "alt": "Forest path covered in autumn leaves, Kyoto" },
+    { "file": "DSC_0854_1.jpg", "alt": "Stone-paved path with lantern in a Kyoto temple" },
+    { "file": "DSC_0858.jpg", "alt": "Cluster of red Japanese maple leaves, Kyoto" },
+    { "file": "DSC_0859.jpg", "alt": "Reflecting pond bordered by autumn maples, Kyoto" },
+    { "file": "DSC_0863.jpg", "alt": "Kyoto temple grounds with autumn color" },
+    { "file": "DSC_1019.jpg", "alt": "Kinkaku-ji, the Golden Pavilion, reflected on its pond" },
+    { "file": "FullSizeRender.jpg", "alt": "Autumn pond at a Kyoto temple garden" }
+  ],
+  "osaka": [
+    { "file": "DSC_1052.jpg", "alt": "Tsutenkaku Tower above the Shinsekai district at night, Osaka" },
+    { "file": "DSC_1061.jpg", "alt": "Dotonbori canal with neon signs reflected in the water, Osaka" },
+    { "file": "FullSizeRender+2.jpg", "alt": "Dotonbori at night with the Tsuboraya pufferfish sign, Osaka" }
+  ],
+  "koyasan": [
+    { "file": "DSC_1158.jpg", "alt": "Moss-covered stone tombs at Okunoin, Koyasan" },
+    { "file": "DSC_1168.jpg", "alt": "Stone steps rising into a cedar forest at Okunoin" },
+    { "file": "DSC_1174.jpg", "alt": "Cluster of mossy gravestones at Okunoin" },
+    { "file": "DSC_1181.jpg", "alt": "Cedar-lined path through Okunoin cemetery" },
+    { "file": "DSC_1187.jpg", "alt": "Jizo statue in a red knit cap, Okunoin" },
+    { "file": "DSC_1192.jpg", "alt": "Stone tombs and lanterns at Okunoin" },
+    { "file": "DSC_1217.jpg", "alt": "Moss-covered stone detail at Okunoin" },
+    { "file": "DSC_1219.jpg", "alt": "Mossy tombs amid the cedars at Okunoin" },
+    { "file": "DSC_1234.jpg", "alt": "Forest path with a stone retaining wall, Koyasan" },
+    { "file": "DSC_1235.jpg", "alt": "Moss-covered stone lantern at Okunoin" }
+  ]
+}
