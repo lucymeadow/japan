@@ -125,6 +125,71 @@ p { margin: 0 0 1em; }
 }
 .hero h1 { margin: 0; }
 
+/* ---------- must-see grid (overview) ---------- */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.section-head h2 { margin: 8px 0 0; }
+.section-head-link {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.section-head-link:hover { color: var(--vermillion); text-decoration: none; }
+
+.must-see-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+.must-card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 16px 18px 16px 22px;
+  color: inherit;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.must-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--ink-3);
+  text-decoration: none;
+}
+.must-card .accent {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: var(--accent, var(--vermillion));
+}
+.must-card .must-city {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent, var(--ink-3));
+  font-weight: 600;
+}
+.must-card .must-name {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin: 4px 0 4px;
+  color: var(--ink);
+}
+.must-card .must-blurb {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+
 /* ---------- city cards ---------- */
 .city-grid {
   display: grid;
